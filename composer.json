@@ -1,0 +1,48 @@
+{
+    "name": "robconvery/laravel-postcodes",
+    "description": "Postcode utilities",
+    "authors": [
+        {
+            "name": "Robert Convery",
+            "email": "robconvery@me.com"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.2",
+        "ext-libxml": "*",
+        "ext-dom": "*",
+        "ext-json": "*",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0",
+        "orchestra/testbench": "^3.0",
+        "squizlabs/php_codesniffer": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Robconvery\\LaravelPostcodes\\": "src/"
+        }
+    },
+    "autoload-dev":  {
+        "psr-4": {
+            "Robconvery\\LaravelPostcodes\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "cs": [
+            "./vendor/bin/phpcs --standard=PSR2 src"
+        ],
+        "cs-fix": [
+            "./vendor/bin/phpcbf --standard=PSR2 src"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Robconvery\\LaravelPostcodes\\PackageServiceProvider"
+            ]
+        }
+    }
+}
