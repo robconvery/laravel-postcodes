@@ -9,6 +9,8 @@
 namespace Robconvery\LaravelPostcodes\Tests\Unit;
 
 use Orchestra\Testbench\TestCase;
+use Robconvery\LaravelPostcodes\Gateways\FakePostcodeGateway;
+use Robconvery\LaravelPostcodes\Interfaces\GatewayInterface;
 use Robconvery\LaravelPostcodes\PackageServiceProvider;
 use Robconvery\LaravelPostcodes\Postcode;
 
@@ -30,6 +32,7 @@ class PostcodesTest extends TestCase
     public function get_postcode_coordinates()
     {
         // Arrange
+        $this->app->instance(GatewayInterface::class, new FakePostcodeGateway());
         $postcode = 'BB18 5QT';
 
         // Act

@@ -67,10 +67,10 @@ class PostcodeGateway implements GatewayInterface
     }
 
     /**
-     * @return false|mixed|string
+     * @return array
      * @throws \GuzzleHttp\Exception\GuzzleException
      */
-    public function getData()
+    public function getData(): array
     {
         try {
             $response = $this->getRequest();

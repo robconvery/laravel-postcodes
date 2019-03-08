@@ -1,0 +1,36 @@
+<?php
+return [
+    "postcode" => "BB18 5QT",
+    "quality" => 1,
+    "eastings" => 387775,
+    "northings" => 446114,
+    "country" => "England",
+    "nhs_ha" => "North West",
+    "longitude" => -2.187584,
+    "latitude" => 53.911032,
+    "european_electoral_region" => "North West",
+    "primary_care_trust" => "East Lancashire Teaching",
+    "region" => "North West",
+    "lsoa" => "Pendle 002A",
+    "msoa" => "Pendle 002",
+    "incode" => "5QT",
+    "outcode" => "BB18",
+    "parliamentary_constituency" => "Pendle",
+    "admin_district" => "Pendle",
+    "parish" => "Barnoldswick",
+    "admin_county" => "Lancashire",
+    "admin_ward" => "Craven",
+    "ced" => "Pendle Rural",
+    "ccg" => "NHS East Lancashire",
+    "nuts" => "East Lancashire",
+    "codes" => [
+        "admin_district" => "E07000122",
+        "admin_county" => "E10000017",
+        "admin_ward" => "E05005257",
+        "parish" => "E04005216",
+        "parliamentary_constituency" => "E14000875",
+        "ccg" => "E38000050",
+        "ced" => "E58000800",
+        "nuts" => "UKD46"
+    ]
+];

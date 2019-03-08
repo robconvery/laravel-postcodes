@@ -10,5 +10,5 @@ interface GatewayInterface
     /**
      * @return mixed
      */
-    public function getData();
+    public function getData(): array;
 }
